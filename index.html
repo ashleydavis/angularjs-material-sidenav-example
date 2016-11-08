@@ -15,14 +15,83 @@
                 md-component-id="left"
                 md-is-locked-open="$mdMedia('gt-md')"
                 >
-                SideNav
-                <button ng-click="toggleLeftSideNav()">Toggle</button>
+                <md-toolbar>
+                    <div class="md-toolbar-tools" layout="row">
+                        <h1 flex>
+                            <span>Sidenav</span>
+                        </h1>
+                        <md-button 
+                            class="md-icon-button" 
+                            ng-click="closeLeftSideNav()"
+                            >
+                            <ng-md-icon icon="close"></ng-md-icon>
+                        </md-button>
+                    </div>
+                </md-toolbar>
+
+                <md-content class="md-padding">
+                    <p>              
+                    Lorem ipsum dolor sit amet, duo ad mundi affert maluisset. Ea vis mentitum assentior, mei in doming omnium. Mei ipsum malorum lobortis ad, ad purto iisque mel. Sea apeirian detraxit ne. Duo habemus expetendis eu, sumo expetendis duo ad, pro ei consul vivendo. Adhuc aliquid splendide ex quo, vis id adhuc iusto tibique, his te posse evertitur cotidieque.
+                    </p>
+
+                    <p>              
+                    Qui ut amet modo nibh, qui cu vitae euismod electram. Est quot populo utroque in, purto vocent referrentur et quo. Viris tibique an nec, nam id zril tantas consequat, id vim everti mediocrem. No vix habeo semper conclusionemque, ne vidit dolore aperiam est. Cu sea quando putent ullamcorper.
+                    </p>
+
+                    <p>              
+                    Vis minim lobortis eu, agam molestiae mei ne. Quo eu vivendo civibus repudiandae, ei vim velit dolorum, possim prompta nec et. Ex nam modus nominavi, debet quaeque eu vel. Ex iudico impedit neglegentur vis. Affert congue nemore te duo, diceret aliquid percipitur sea ex.
+                    </p>
+
+                    <p>              
+                    Mel ei tale utroque. Reque veniam appareat an pro, dicat putant lobortis mei ad. Ne sint graece mucius qui. Cu munere vidisse salutatus eam. Argumentum referrentur sit in, eu cibo elitr definiebas mel. Mea ornatus meliore in, eu mel tota dicit.
+                    </p>
+
+                    <p>              
+                    Ne cibo quaeque consequuntur his, has ea docendi accusata reformidans. In veri definitiones ius, sed voluptua periculis te, eirmod dissentiunt at has. Et modo veritus has. Ne sumo propriae vulputate vix, id suas dolorum alienum vel, an aperiri evertitur sit. Wisi ipsum persequeris at nec, et fugit nonumy volutpat mea.
+                    </p>
+
+                </md-content>                
             </md-sidenav>
 
             <md-content flex layout="column">
-                Content
+                <md-toolbar>
+                    <div class="md-toolbar-tools">
+                        <md-button 
+                            class="md-icon-button" 
+                            ng-click="toggleLeftSideNav()"
+                            >
+                            <ng-md-icon icon="menu"></ng-md-icon>
+                        </md-button>
+                        <h1>
+                            <span>Content area</span>
+                        </h1>
+                    </div>
+                </md-toolbar>
 
-                <button ng-click="toggleLeftSideNav()">Toggle</button>
+                <md-content class="md-padding">
+
+                    <p>              
+                    Lorem ipsum dolor sit amet, duo ad mundi affert maluisset. Ea vis mentitum assentior, mei in doming omnium. Mei ipsum malorum lobortis ad, ad purto iisque mel. Sea apeirian detraxit ne. Duo habemus expetendis eu, sumo expetendis duo ad, pro ei consul vivendo. Adhuc aliquid splendide ex quo, vis id adhuc iusto tibique, his te posse evertitur cotidieque.
+                    </p>
+
+                    <p>              
+                    Qui ut amet modo nibh, qui cu vitae euismod electram. Est quot populo utroque in, purto vocent referrentur et quo. Viris tibique an nec, nam id zril tantas consequat, id vim everti mediocrem. No vix habeo semper conclusionemque, ne vidit dolore aperiam est. Cu sea quando putent ullamcorper.
+                    </p>
+
+                    <p>              
+                    Vis minim lobortis eu, agam molestiae mei ne. Quo eu vivendo civibus repudiandae, ei vim velit dolorum, possim prompta nec et. Ex nam modus nominavi, debet quaeque eu vel. Ex iudico impedit neglegentur vis. Affert congue nemore te duo, diceret aliquid percipitur sea ex.
+                    </p>
+
+                    <p>              
+                    Mel ei tale utroque. Reque veniam appareat an pro, dicat putant lobortis mei ad. Ne sint graece mucius qui. Cu munere vidisse salutatus eam. Argumentum referrentur sit in, eu cibo elitr definiebas mel. Mea ornatus meliore in, eu mel tota dicit.
+                    </p>
+
+                    <p>              
+                    Ne cibo quaeque consequuntur his, has ea docendi accusata reformidans. In veri definitiones ius, sed voluptua periculis te, eirmod dissentiunt at has. Et modo veritus has. Ne sumo propriae vulputate vix, id suas dolorum alienum vel, an aperiri evertitur sit. Wisi ipsum persequeris at nec, et fugit nonumy volutpat mea.
+                    </p>
+
+                </md-content>
+
             </md-content>
         
         </div>

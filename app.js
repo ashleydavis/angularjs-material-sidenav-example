@@ -1,9 +1,11 @@
 
 angular.module( 'YourApp', [ 'ngMaterial', 'ngMdIcons' ] )
-    .controller("YourController", function ($scope, $mdSidenav, $mdMedia) {
+    .controller("YourController", function ($scope, $mdSidenav) {
         $scope.yo = 'wddw!';
 
-        //$scope.$mdMedia = $mdMedia;
+        $scope.closeLeftSideNav = function () {
+            $mdSidenav('left').close();
+        };
 
         $scope.toggleLeftSideNav = function () {
             $mdSidenav('left').toggle();
