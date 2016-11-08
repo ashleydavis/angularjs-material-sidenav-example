@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body ng-app="YourApp">
+
+        <div ng-controller="YourController">
+
+            <md-sidenav 
+                layout="column" 
+                class="md-sidenav-left"
+                md-component-id="left"
+                md-is-locked-open="$mdMedia('gt-md')"
+                >
+                SideNav
+                <button ng-click="toggleLeftSideNav()">Toggle</button>
+            </md-sidenav>
+
+            <md-content flex layout="column">
+                Content
+
+                <button ng-click="toggleLeftSideNav()">Toggle</button>
+            </md-content>
+        
+        </div>
+
+        <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-aria/angular-aria.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.js"></script>
+        <script src="/bower_components/angular-material/angular-material.js"></script>
+        <script src="/bower_components/angular-material-icons/angular-material-icons.js"></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>
